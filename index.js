@@ -12,7 +12,7 @@ pool.connect((err, res) => {
   }
 });
 
-app.use("/router", router);
+app.use("/neblix", router);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
