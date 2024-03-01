@@ -4,7 +4,8 @@
   "description": "latihan membuat aplikasi express js",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "seed": "node db/seeding.js"
   },
   "author": "ikram",
   "license": "ISC",
