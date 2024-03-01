@@ -2,15 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const pool = require("./db/queries");
-
-app.get("/", (req, res) => {
-  pool.query("SELECT * FROM actor", (err, result) => {
-    if (err) {
-      throw err;
-    }
-    res.status(200).json(result.rows);
-  });
-});
+const router = require("./router.js");
 
 pool.connect((err, res) => {
   if (err) {
@@ -19,6 +11,8 @@ pool.connect((err, res) => {
     console.log("Connected to database");
   }
 });
+
+app.use("/router", router);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
