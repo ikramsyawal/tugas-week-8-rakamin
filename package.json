@@ -1,0 +1,14 @@
+{
+  "name": "tugas-week-8-rakamin",
+  "version": "1.0.0",
+  "description": "latihan membuat aplikasi express js",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "ikram",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
