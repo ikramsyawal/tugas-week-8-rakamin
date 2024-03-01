@@ -4,7 +4,12 @@ const port = 3000;
 const pool = require("./queries");
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  pool.query("SELECT * FROM actor", (err, result) => {
+    if (err) {
+      throw err;
+    }
+    res.status(200).json(result.rows);
+  });
 });
 
 pool.connect((err, res) => {
