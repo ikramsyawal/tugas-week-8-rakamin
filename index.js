@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3000;
-const pool = require("./queries");
+const pool = require("./db/queries");
 
 app.get("/", (req, res) => {
   pool.query("SELECT * FROM actor", (err, result) => {
