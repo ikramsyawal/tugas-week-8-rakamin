@@ -52,4 +52,20 @@ router.get("/category/:id?", (req, res) => {
   });
 });
 
+router.get("/actor/:id?", (req, res) => {
+  const id = req.params.id;
+  let query = `SELECT * FROM actor ORDER BY actor_id ASC`;
+
+  if (id) {
+    query = `SELECT * FROM actor WHERE actor_id = ${id}`;
+  }
+  pool.query(query, (err, result) => {
+    if (err) {
+      res.status(500).json({ message: "Internal server error" });
+    } else {
+      res.status(200).json(result.rows);
+    }
+  });
+});
+
 module.exports = router;
