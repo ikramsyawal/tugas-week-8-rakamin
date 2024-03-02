@@ -14,6 +14,6 @@ express js and dabase integration
 
 1. melakukan seeding, memasukkan 5 data baru pada table actor
    - seeding command
-     ![seeding command](image.png)
+     [seeding command](https://cdn.discordapp.com/attachments/724584754619613206/1213033240156307488/image.png?ex=65f4003d&is=65e18b3d&hm=d8f1ec80ffc9b472ca78c936bd6e8fa3f1a250115fd48febaf4147d850bc5c28&)
    - result
-     ![result](image-1.png)
+     [result](https://cdn.discordapp.com/attachments/724584754619613206/1213033884669710366/image.png?ex=65f400d7&is=65e18bd7&hm=219b0c8e199c4f59e64aff543f211f49ebe2a216d35b98d00423da90c4ff25bd&)
